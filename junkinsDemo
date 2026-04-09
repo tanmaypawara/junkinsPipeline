@@ -1,41 +1,21 @@
 pipeline {
-
     agent any
 
- 
-
     stages {
-
         stage('Build') {
-
             steps {
-
-                echo 'Building Example'
-
+                echo 'Building the application...'
             }
-
         }
-
         stage('Test') {
-
             steps {
-
-                echo 'Testing Example'
-
+                echo 'Running unit tests...'
             }
-
         }
-
         stage('Deploy') {
-
             steps {
-
-                echo 'Deploying Example'
-
+                echo 'Deploying to staging environment...'
             }
-
         }
-
     }
-
 }
